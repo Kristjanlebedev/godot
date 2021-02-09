@@ -25,7 +25,6 @@ func _process(delta):
 			reload()
 	else:
 		var accu =  pihtas*100/tulis
-		print(tulis," ",pihtas)
 		print("Mäng läbi. Lastud kuulid: ",tulis," Täpsus: ",accu,"%")
 		get_tree().quit()
 
@@ -45,7 +44,6 @@ func shoot():
 	else:
 		print("Möödas")
 	print("vaenlase elud: ",vhp)
-	print(tulis," ",pihtas)
 
 
 
