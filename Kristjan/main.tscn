@@ -1,0 +1,97 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://harjutus6.gd" type="Script" id=1]
+[ext_resource path="res://VT323-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://bg2.jpg" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 62
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 40
+font_data = ExtResource( 2 )
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Taust" type="TextureRect" parent="."]
+margin_left = 1.0
+margin_right = 1025.0
+margin_bottom = 600.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Paigal" type="RichTextLabel" parent="Taust"]
+margin_left = 369.561
+margin_top = 15.1586
+margin_right = 703.561
+margin_bottom = 88.1586
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 1, 0, 0, 1 )
+text = "TAPA!!"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Kuulid" type="RichTextLabel" parent="Taust"]
+margin_left = 24.0
+margin_top = 8.0
+margin_right = 186.0
+margin_bottom = 55.0
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Kuulid: 5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="RichTextLabel" parent="Taust"]
+margin_left = 821.085
+margin_top = -2.44783
+margin_right = 1091.09
+margin_bottom = 87.5522
+custom_fonts/normal_font = SubResource( 3 )
+text = "Scoor: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Elud" type="RichTextLabel" parent="Taust"]
+margin_left = 855.715
+margin_top = 549.67
+margin_right = 1023.71
+margin_bottom = 592.67
+custom_fonts/normal_font = SubResource( 4 )
+text = "ELUD: 100"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tegevus" type="RichTextLabel" parent="Taust"]
+margin_left = 37.0
+margin_top = 530.0
+margin_right = 538.0
+margin_bottom = 594.0
+custom_fonts/normal_font = SubResource( 5 )
+text = "Ootan"
+__meta__ = {
+"_edit_use_anchors_": false
+}
